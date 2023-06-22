@@ -1,0 +1,211 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> DataForge  - Your Data Generation Platform </title>
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    {% comment %} <link rel="stylesheet" href="{% static 'css/home.css' %}"> {% endcomment %}
+
+    <!-- Bootstrap CSS -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- Custom CSS -->
+    <style>
+        /* Custom styles here */
+        .text-primary {
+          color: blue !important; 
+      }
+
+      .text-primary ::hover {
+        color: red !important; 
+    }
+    </style>
+</head>
+
+<body>
+    <!-- Intro section -->
+    <section id="intro">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <img src="{% static 'img/dataforge.png' %}" alt="Cover Image" class="img-fluid">
+                </div>
+                <div class="col-md-6">
+                    <h1>DataForge</h1>
+                    <p>A platform that enables users to generate big datasets using models and export data in various formats such as CSV, JSON, SQL import files, and XML. </p>
+                    <p> <b> It also works with api </b>  <i> The api currently returns json</i> </p>
+
+                    <nav class="navbar navbar-inverse">
+                      <div class="container">
+                          <div class="navbar-header">
+                              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                                  <span class="sr-only">Toggle navigation</span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                                  <span class="icon-bar"></span>
+                              </button>
+                          </div>
+                          
+                          <div class="collapse navbar-collapse" id="navbar-collapse">
+                              <ul class="nav navbar-nav">
+                                  <li><a href="/generate">View Application</a></li>
+                                  <li><a href="#features">Features</a></li>
+                                  <li><a href="#about">About</a></li>
+                              </ul>
+                          </div>
+                      </div>
+                  </nav>
+
+                    <p>The DataForge project aims to provide users with a platform for generating and exporting data in various formats to save time and effort. 
+                        However, the project does not validate the input data, and it is the user's responsibility to ensure that the data is accurate and appropriate. 
+                        The project's target users are data analysts, scientists, and developers who need to generate and export data in various formats.</p>
+
+                    <p><b>It currently only supplies json</b></p>
+ 
+
+                    <p>
+                      <b>Existing Solutions:</b> 
+                      Excel, Google Sheets, and other spreadsheet applications allow users to generate and export data in various formats. However, these applications can be time-consuming and require manual effort.
+                      Other similar web applications such as Mockaroo and RandomAPI provide similar functionalities. However, DataForge aims to provide a more user-friendly and customizable interface for generating and exporting data.
+                    </p>
+
+                    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                        <ul class="navbar-nav">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#features">Features</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#about">About</a>
+                            </li>
+                        </ul>
+                    </nav> -->
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features section -->
+    <section id="features">
+        <div class="container">
+            <h2>Key Features</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <img  src="{% static 'img/feature1.png' %}" alt="Feature Image 1" class="img-fluid">
+                    <h3>Create Data from Model</h3>
+                    <p>Generate big datasets using models and export data in various formats such as JSON.</p>
+
+                    <p>This is the post data given</p>
+                    <code>
+                        <p>
+                            {
+                                "id" : "id",
+                                "age" : "number (12-16)",
+                                "amount": "number (100 - 20000)",
+                                "city" : "city",
+                                "state" : "state",
+                                "country" : "country",
+                                "First name":  "name",
+                                "Last name": "name",
+                                "Gender": "gender"
+                            }
+                        </p>
+                    </code>
+                </div>
+                <div class="col-md-4">
+                    <img src="path/to/feature-image2.jpg" alt="Feature Image 2" class="img-fluid">
+                    <h3>Feature 2</h3>
+                    <p>Description of Feature 2</p>
+                </div>
+                <div class="col-md-4">
+                    <img src="path/to/feature-image3.jpg" alt="Feature Image 3" class="img-fluid">
+                    <h3>Feature 3</h3>
+                    <p>Description of Feature 3</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About section -->
+    <section id="about">
+      <div class="container">
+          <h2>About</h2>
+          <p>
+              This project was inspired by my passion for data analysis and the need for synthetic data generation. 
+              As a student at Holberton School, I embarked on this Portfolio Project to showcase my skills in data 
+              manipulation and web development.
+          </p>
+          <p>
+              Throughout the project, I worked diligently to create a robust data generation system that can produce 
+              synthetic data based on predefined data types. The timeline for this project spanned several weeks, 
+              involving research, prototyping, and iterative development to achieve the desired functionality.
+          </p>
+          <p>
+              The DataForge team consists of talented individuals who collaborated to bring this project 
+              to life. Connect with our team members to learn more about their contributions and expertise:
+          </p>
+
+          <nav class="navbar navbar-default">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+                
+                <div class="collapse navbar-collapse" id="navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li><a class="text-primary" href="https://www.linkedin.com/in/team-member1" target="_blank">LinkedIn</a></li>
+                        <li><a class="text-primary" href="https://github.com/LilyCrown999" target="_blank">GitHub</a></li>
+                        <li><a class="text-primary" href="https://twitter.com/nichael_crown" target="_blank">Twitter</a></li>
+                        <li><a class="text-primary" href="https://github.com/LilyCrown999/DataForge" target="_blank">GitHub Repository</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+      </div>
+    </section>
+
+
+    <!-- About section
+    <section id="about">
+        <div class="container">
+            <h2>About</h2>
+            <p>A personal story about what inspired the project. Mention the timeline and that this is a Portfolio Project for Holberton School. Include links to team members' LinkedIn, GitHub, and Twitter profiles.</p>
+            <ul>
+                <li><a href="link/to/linkedin-profile">LinkedIn</a></li>
+                <li><a href="link/to/github-profile">GitHub</a></li>
+                <li><a href="link/to/twitter-profile">Twitter</a></li>
+            </ul>
+            <a href="link/to/github-repository">GitHub Repository</a>
+        </div>
+    </section> -->
+
+    <!-- Optional video section -->
+    <section id="video">
+        <div class="container">
+            <h2>Project Video</h2>
+            <p>An introduction to team members, the story behind the project, walkthrough of 1-3 features, and what's next for the project.</p>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+
+</html>
